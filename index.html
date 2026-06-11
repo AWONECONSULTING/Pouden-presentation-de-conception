@@ -48,6 +48,11 @@ body.locked{overflow:hidden}
 .aw-steps .s-lbl{font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(252,252,252,.5);margin-bottom:1rem}
 .aw-chips{display:flex;gap:.7rem;flex-wrap:wrap;position:relative}
 .aw-chips::before{content:"";position:absolute;left:12px;right:12px;top:23px;height:1px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.16) 0 6px,transparent 6px 12px);z-index:0}
+.aw-badge{display:inline-flex;align-items:center;gap:.7rem;background:#C1F1AA;color:#15101F;font-family:"Clash Display",sans-serif;font-weight:600;font-size:.98rem;letter-spacing:-.01em;padding:.72rem 1.25rem .72rem 1rem;border-radius:100px;box-shadow:0 16px 34px -12px rgba(193,241,170,.6);transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s}
+.aw-badge:hover{transform:translateY(-4px);box-shadow:0 22px 44px -14px rgba(193,241,170,.75)}
+.aw-badge .dot{width:9px;height:9px;border-radius:50%;background:#FF6F3C;flex:none;box-shadow:0 0 0 4px rgba(255,111,60,.25)}
+.aw-badge b{font-weight:700}
+.aw-badge .sep{opacity:.5;font-weight:500;margin:0 -.15rem}
 .aw-chip{position:relative;z-index:1;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-family:"Clash Display",sans-serif;font-weight:600;font-size:1.05rem;color:#0A0A0A;transition:transform .35s cubic-bezier(.34,1.56,.64,1),box-shadow .35s}
 .aw-chip:hover{transform:translateY(-5px);box-shadow:0 14px 28px -8px var(--c)}
 .aw-panel{position:relative;background:#C7B1FF;color:#15101F;display:flex;flex-direction:column;justify-content:center;
@@ -94,14 +99,8 @@ body.locked{overflow:hidden}
         <span class="line"><span style="animation-delay:.5s"><span class="hl">on le réalise !</span></span></span>
       </h1>
       <div class="aw-steps">
-        <div class="s-lbl">5 grandes étapes de présentation</div>
-        <div class="aw-chips">
-          <div class="aw-chip" style="background:#C7B1FF;--c:#C7B1FF">01</div>
-          <div class="aw-chip" style="background:#FEABFF;--c:#FEABFF">02</div>
-          <div class="aw-chip" style="background:#FFFF7D;--c:#FFFF7D">03</div>
-          <div class="aw-chip" style="background:#C1F1AA;--c:#C1F1AA">04</div>
-          <div class="aw-chip" style="background:#FF6F3C;--c:#FF6F3C">05</div>
-        </div>
+        <div class="s-lbl">Votre espace sécurisé</div>
+        <div class="aw-badge"><span class="dot"></span><b>Indice A</b><span class="sep">·</span>Présentation de conception</div>
       </div>
     </div>
     <div class="aw-panel">
